@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+}
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%); 
+    overflow: hidden;
+}
+img.desktop {
+    display:none;
+}
+.container {
+    height: 100%;
+    margin: auto;
+    min-width: 92%;
+    max-width: 92%;
+    background-color: white;
+    margin-top: 1.5em;
+    border-radius: .75em;
+        margin-bottom: 1.5em;
+}
+.container img {
+    margin: auto;
+    width: 100%;
+    border-top-left-radius: .75em;
+    border-top-right-radius: .75em;
+    margin: 0;
+    
+    
+}
+.low {
+    margin-top: 1.5em;
+    margin: 1.5em;
+    margin-bottom: .5em;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-weight: lighter;
+    margin-bottom: .5em;
+    font-size: 14px;
+}
+.header {
+    font-family: 'Fraunces', serif;
+    margin-bottom: .5em;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.sub {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2em;
+    margin-bottom: 1.5em;
+    font-size: 14px;
+}
+.price {
+    font-family: 'Fraunces', serif;
+    display: inline-flex;  
+}
+.price h1 {
+    font-size: 2.1rem;
+    color: #3D8763;
+}
+.price p {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    font-size: .75rem;
+    text-decoration-line: line-through;
+    color: black;
+    font-weight: lighter;
+    margin-top: 1.1em;
+    margin-left: 1.5em;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3D8763;    ;
+    border-radius: .6em;
+    padding: 1em;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: .85rem;
+}
+svg {
+    position: relative;
+    height: 1em;
+    width: 1.5em;
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        display: grid;
+        place-items: center;
+    }
+    .container {
+        min-width: unset;
+        display: grid;
+        width: 42%;
+        grid-template-columns: repeat(2, 50%);
+    }
+    img.mobile {
+        display: none;
+    }
+    img.desktop {
+        display: block;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .75em;
+    }
+    .low {
+        margin: 2em 2em auto 2em;
+    }
+    .header {
+        font-size: 2.1rem;
+    }
+    h2 {
+        font-size: .75rem;
+        margin-bottom: .5em;
+    }
+    .price h1 {
+        font-size: 2rem;
+    }
+    button {
+        margin-top: 1.5em auto 0;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #094628;
+    }
+}
